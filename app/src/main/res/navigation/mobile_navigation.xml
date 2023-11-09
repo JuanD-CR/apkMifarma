@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_splash">
+    <fragment
+        android:id="@+id/nav_cuenta"
+        android:name="com.crjuand.apkmifarma.ui.Cuenta"
+        android:label="fragment_cuenta"
+        tools:layout="@layout/fragment_cuenta" />
+    <fragment
+        android:id="@+id/nav_splash"
+        android:name="com.crjuand.apkmifarma.ui.Splash"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_nav_splash_to_nav_login"
+            app:destination="@id/nav_login" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.crjuand.apkmifarma.ui.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_nav_login_to_nav_monedero"
+            app:destination="@id/nav_monedero" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_monedero"
+        android:name="com.crjuand.apkmifarma.ui.Monedero"
+        android:label="fragment_monedero"
+        tools:layout="@layout/fragment_monedero" >
+        <action
+            android:id="@+id/action_nav_monedero_to_nav_compras"
+            app:destination="@id/nav_compras" />
+        <action
+            android:id="@+id/action_nav_monedero_to_nav_cuenta"
+            app:destination="@id/nav_cuenta" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_compras"
+        android:name="com.crjuand.apkmifarma.ui.Compras"
+        android:label="fragment_compras"
+        tools:layout="@layout/fragment_compras" />
+</navigation>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">apkMifarma</string>
+    <string name="title_Monedero">Monedero</string>
+    <string name="title_Compras">Compras</string>
+    <string name="title_Cuenta">Cuenta</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

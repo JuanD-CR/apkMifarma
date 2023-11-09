@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_monedero"
+        android:icon="@drawable/ic_monedero"
+        android:title="@string/title_Monedero" />
+
+    <item
+        android:id="@+id/nav_compras"
+        android:icon="@drawable/ic_mifarma"
+        android:title="@string/title_Compras" />
+
+    <item
+        android:id="@+id/nav_cuenta"
+        android:icon="@drawable/ic_cuenta"
+        android:title="@string/title_Cuenta" />
+
+</menu>
